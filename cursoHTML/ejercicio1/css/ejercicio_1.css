@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px;
+}
+h2{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p{
+    color:blue;
+    margin-left: 10px;
+}
