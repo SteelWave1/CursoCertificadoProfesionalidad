@@ -1,0 +1,87 @@
+html, body{
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+h2{
+    font-size: 16px;
+    color:#666;
+}
+#titulo, #subtitulo{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 2%;
+    margin: 0;
+    color: purple;
+}
+#titulo{
+    padding-bottom: 0;
+    font-size: 40px;
+}
+#subtitulo{
+    padding-top: 0;
+}
+#noticias, #eventos{
+    background-color: beige;
+    box-shadow: #333 2px 2px 3px;
+    overflow: hidden;
+    width: 76%;
+    margin: 20px auto;
+    padding: 2%;
+    text-align: center;
+}
+#noticias h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.col2{
+    width: 19%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+}
+.col3{
+    width: 27%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;    
+}
+#patrocinadores{
+    background-color: beige;
+    box-shadow: #333 2px 2px 3px;
+    overflow: hidden;
+    width: 76%;
+    margin: 20px auto;
+    padding: 2%;
+    text-align: center;
+}
+.patrocinadores .col4{
+    background-color: bisque;
+    color: #333;
+}
+.col4{
+    background-color: coral;
+    overflow: hidden;
+    width: 18%;
+    margin: 0.5%;
+    padding: 0.5%;   
+    float: left;
+}
+#pie{
+    width: 80%;
+    padding: 10%;
+    background-color: black;
+    color: white;
+    overflow: auto;
+}
+
