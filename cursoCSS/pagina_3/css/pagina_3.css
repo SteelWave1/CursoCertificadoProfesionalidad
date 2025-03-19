@@ -1,0 +1,141 @@
+html{
+    background-color:bisque ;
+}
+header {
+    background-color:cornflowerblue;
+    padding: 10px;
+    position: relative;
+    height: 80px;
+    border-radius: 20px;
+}
+
+#logo_pagina {
+    width: 80px;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+}
+
+#redes_sociales {
+    float: right;
+}
+
+#redes_sociales a {
+    display: block;
+    text-align: center;
+}
+
+#redes_sociales img {
+    width: 30px;
+    height: auto;
+    margin: 5px 0;
+}
+
+#logo_x {
+    border-radius: 30%;
+}
+
+/*#img_italy {
+    width: 300px;
+    margin: 20px;
+}
+
+#img_eeuu {
+    width: 300px;
+    margin: 20px;
+}*/
+
+.contenedor {
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px 2%;
+    overflow: hidden;
+    margin: 20px 2%;
+    width: 92%;
+}
+.coli{
+    width: 28%;
+    float: left;
+    padding: 1%;
+}
+.cold{
+    width: 69%;
+    float: left;
+}
+.contenedor img{
+    width: 100%;
+}
+.contenedor p {
+
+    font-size: 18px;
+}
+
+footer {
+    background-color: coral;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+}
+
+#logo_trivago {
+    width: 150px;
+}
+
+#logo_turia {
+    width: 150px;
+}
+
+#logo_iberia {
+    width: 150px;
+}
+
+footer {
+    background-color: #222; /* Fondo oscuro elegante */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #f8c12c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
