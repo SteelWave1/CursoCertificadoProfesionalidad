@@ -4,7 +4,8 @@
     border: 2px solid #999;
     display: flex;
     margin: 40px auto;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     /*gap funciona para distribuir mejor los contenidos para que sean igual de grandes*/
     gap: 40px;
     background-color: aquamarine;
@@ -22,9 +23,11 @@
     box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
+    align-items: center;
 }  
 .grande {
     flex: 2;
+
 }
 .producto:hover{
     transform: scale(1.03);
@@ -58,7 +61,10 @@
     transform: rotate(-20deg);
 }
 .pantalones_verdes{
-    width: 200px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    max-width: 200px; /* No será más grande que 200px */
 }
