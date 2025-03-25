@@ -1,0 +1,10 @@
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: bisque;
+    margin: auto;
+    width: 40%;
+}
+th{
+    background-color: aquamarine;
+}

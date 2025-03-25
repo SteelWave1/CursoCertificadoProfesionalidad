@@ -4,7 +4,7 @@
     border: 2px solid #999;
     display: flex;
     margin: 40px auto;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     /*gap funciona para distribuir mejor los contenidos para que sean igual de grandes*/
     gap: 40px;
