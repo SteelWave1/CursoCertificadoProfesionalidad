@@ -1,0 +1,118 @@
+html{
+    background-color: #191c29;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.cabecera .logo h1 {
+    margin: 0;
+}
+
+.cabecera .navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.fondo_cabecera {
+    background-image: url(../img/cabecera.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.cabecera_contenido h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor {
+    background-color: #666;
+    border-radius: 20px;
+    padding: 10px 2%;
+    overflow: hidden;
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 1000px; 
+}
+.contenedor h2{
+    color: black;
+    text-align: center;
+}
+main h2{
+    color: antiquewhite;
+}
+.contenedor p{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #15161a;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+footer h3 p{
+    margin: 20px;
+}
+
+/*Aqui empiezan objetos de pagina productos*/
+main{
+    padding: 20px;
+}
+.juegos_pc{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: right;
+}
+.pc{
+    background-color: #666;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+}
+.pc:hover{
+    transform: scale(1.05);
+}
+.pc img{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, border 0.3s ease; 
+}
+.precio{
+    font-weight: bold;
+    color: #ffdb4d;
+    margin-top: 10px;
+}
+.descripcion{
+    font-size: 0.9em;
+    text-align: justify;
+}
