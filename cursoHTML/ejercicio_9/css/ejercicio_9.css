@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+header h2 {
+    display: inline;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+/* Menú de navegación */
+nav {
+    background: #003d82;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #0073e6;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+aside {
+    background: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #00b3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
