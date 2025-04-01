@@ -14,6 +14,10 @@ body {
     color: white;
     padding: 10px 20px;
 }
+@keyframes slideIn {
+    from{opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
 
 .cabecera .logo h1 {
     margin: 0;
@@ -35,11 +39,13 @@ body {
     align-items: center;
     color: white;
     text-align: center;
+    animation: slideIn 2s ease-in-out;
 }
 
 .cabecera_contenido h1 {
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 }
 
 .contenedor {
@@ -50,17 +56,22 @@ body {
     margin: 20px auto; 
     width: 80%; 
     max-width: 1000px; 
+    animation: slideIn 2s ease-in-out;
 }
 .contenedor h2{
     color: black;
     text-align: center;
+    animation: slideIn 2s ease-in-out;
 }
 main h2{
     color: antiquewhite;
+    text-align: center;
+    animation: slideIn 2s ease-in-out;
 }
 .contenedor p{
     color: aliceblue;
     text-align: center;
+    animation: slideIn 2s ease-in-out;
 }
 
 
@@ -84,8 +95,8 @@ main{
     padding: 10px;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    float: right;
+    justify-content: space-evenly;
+    animation: slideIn 2s ease-in-out;
 }
 .pc{
     background-color: #666;
@@ -96,6 +107,7 @@ main{
     position: relative;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin: 10px;
+    margin-left: 50px;
 }
 .pc:hover{
     transform: scale(1.05);
@@ -115,4 +127,30 @@ main{
 .descripcion{
     font-size: 0.9em;
     text-align: justify;
+}
+@media (max-width:1000px){
+    .pc{
+        width: 30%;
+    }
+    .pc img{
+        width: 100%;
+    }
+}
+@media (max-width:768px){  
+    .fondo_cabecera {
+        height: 300px;
+
+    }
+    .cabecera_contenido h1 {
+        font-size: 30px;
+    }
+    main h2{
+        padding-left: 130px;
+    }
+    .pc{
+        width: 60%;
+    }
+    .pc img{
+        width: 100%;
+    }
 }

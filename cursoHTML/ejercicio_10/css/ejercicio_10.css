@@ -1,0 +1,22 @@
+table, td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+}
+caption{
+    font-size: 30px;
+}
+table thead{
+    font-weight: bold;
+}
+table tbody tr:nth-child(even){
+    background-color: #eee;
+}
+table tbody tr:nth-child(odd){
+    background-color: #fadddd;
+}
+table tfoot{
+    background-color: greenyellow;
+}

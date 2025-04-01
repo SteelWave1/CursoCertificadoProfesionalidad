@@ -1,0 +1,24 @@
+caption{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+}
+table, td{
+    border: solid brown 3px;
+    border-collapse: collapse;
+    color: brown;
+
+}
+#col1{
+    background-color: aquamarine;
+
+}
+#col2{
+    background-color:greenyellow;
+
+}
+#col3{
+    background-color: grey;
+
+}
