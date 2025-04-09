@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #4d1b11;
+    color: white;
+}
+header{
+    background: #b33f27;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover{
+    color:#d77866;
+}
+.hero{
+    background: url('../img/fuego.jpg') no-repeat center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero h2{
+    font-size: 36px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+.item{
+    background: #913320;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.item h3{
+    margin-top: 10px;
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+footer{
+    background: #b33f27;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+@media (max-width:900px){
+    header h1{
+        font-size: 0.9em;
+    }
+}
+@media (max-width:768px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}

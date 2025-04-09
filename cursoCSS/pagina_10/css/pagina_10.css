@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 15px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #b33f27;
+    padding: 20px;
+}
+.item{
+    background: #d77866;
+    color: white;
+    display: flex;
+    justify-content: center;/*este alinea horizontalmente*/
+    align-items: center;/*este alinea verticalmente*/
+    font-size: 24px;
+    font-family: bold;
+}

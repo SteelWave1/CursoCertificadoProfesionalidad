@@ -1,0 +1,109 @@
+:root{
+    --colorbg: #fdfaf6;
+    --coloracento: #b33f27;
+    --colortexto: #333;
+    --colorblanco:#fff;
+    --paddingbase:1rem;
+    --paddinglg:2rem;
+    --fonttitulo:2rem;
+    --fontsubtitulo:1.5rem;
+    --letratexto:1rem;
+    --gap: 1rem;
+    --radioborde: 12px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--colorbg);
+    color: var(--colortexto);
+    line-height: 1.6;
+    padding: var(--paddingbase);
+}
+.titulo{
+    font-size: var(--fonttitulo);
+    color: var(--coloracento);
+    text-align: center;
+}
+.subtitulo{
+    font-size: var(--fontsubtitulo);
+    color: var(--colortexto);
+}
+.texto{
+    font-size: var(--letratexto);
+}
+.grid_contenedor{
+    display: grid;
+    gap: var(--gap);
+    grid-template-areas: 
+    "header"
+    "intro"
+    "img1"
+    "texto1"
+    "img2"
+    "footer";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    padding: var(--paddinglg);
+}
+.intro{
+    grid-area: intro;
+    background-color: var(--coloracento);
+    color: var(--colorblanco);
+    padding: var(--paddinglg);
+    border-radius: var(--radioborde);
+    text-align: center; 
+}
+.img1{
+    grid-area: img1;
+    background: url('../img/casa1.png') no-repeat center/cover;
+    height: 200px;
+    border-radius: var(--radioborde);
+}
+.texto1{
+    grid-area: texto1;
+    background: var(--colorblanco);
+    padding: var(--paddinglg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.img2{
+    grid-area: img2;
+    background: url('../img/casa2.png') no-repeat center/cover;
+    height: 150px;
+    border-radius: var(--radioborde);
+}
+footer{
+    grid-area: footer;
+    background: var(--coloracento);
+    color: var(--colorblanco);
+    text-align: center;
+    padding: var(--paddingbase);
+    border-radius: var(--radioborde);
+}
+@media(min-width:768px){
+    :root{
+        --paddingbase:1.5rem;
+        --paddinglg:3rem;
+        --fonttitulo:3rem;
+        --fontsubtitulo:2rem;
+        --letratexto:1.2rem;
+    }
+    .grid_contenedor{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header header"
+        "intro img1"
+        "texto1 img2"
+        "footer footer";
+    }
+    .img1, .img2{
+        height: 100%;
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,17 @@
+h1{
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+.container{
+    width: clamp(200px, 50vw, 800px);
+    height: clamp(50px, 10vh, 500px);
+    background-color: blueviolet;
+    padding: 80px;
+}
+h2{
+    font-size: 5vw;
+}
+img{
+    width: 50vw;
+    height: auto;
+    max-width: 100%;
+}

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slider {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+input[type="radio"] {
+    display: none;
+}
+.slides {
+    display: flex;
+    width: 300%;/*se añade 100 por cada imagen nueva que quieras meter, si quieres meter 3 son 300 si son 4 400*/
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: zoom 12s infinite ease-in-out;
+    object-fit: cover;
+}
+.s1 {
+    background-image: url('../img/casa1.png');
+}
+.s2 {
+    background-image: url('../img/casa2.png');
+}
+.s3 {
+    background-image: url('../img/casa1.png');
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+    transform: translateX(-33.33%);
+}
+#slide3:checked ~ .slides {
+    transform: translateX(-66.66%);
+}
+
+/* Navegación mejorada */
+.nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.nav label {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Indicador activo */
+input[type="radio"]:checked + label {
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+@keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
