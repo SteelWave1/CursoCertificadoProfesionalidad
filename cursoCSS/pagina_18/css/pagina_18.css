@@ -47,11 +47,10 @@ input[type="radio"] {
 }
 .caption h2{
     font-size: 2rem;
+    text-align: center;
     margin-bottom: 0.5rem;
 }
-.caption p{
-    font-size: 1rem;
-}
+
 
 #slide1:checked ~ .slides {
     transform: translateX(0%);
