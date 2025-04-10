@@ -179,7 +179,7 @@ footer {
     66.64% { transform: translateX(-66.64%); } /* Imagen 3 visible */
     100% { transform: translateX(0%); }        /* Vuelve a la Imagen 1 */
 }
-@media(min-width:768px){
+@media(min-width:840px){
     /*Textos del banner centradas*/
     .caption1{
         left: 14.80%;
@@ -191,65 +191,20 @@ footer {
         left: 81.50%;
     }
     /*Menu navegacion horizontal*/
-    .main-container {
-        display: flex; /* Activa flexbox para la disposición de la barra y la sección */
-        flex-direction: row; /* Dispone los elementos en fila (barra a la izquierda, sección a la derecha por defecto) */
-      }
-      
-      /* Estilos para la barra de navegación vertical */
-      .barra-opciones {
-        width: 200px; /* Ancho deseado para la barra de navegación */
-        background-color: #f0f0f0; /* Color de fondo de la barra */
-        padding: 20px;
-        box-sizing: border-box; /* Incluye padding y border en el ancho */
-        /* Otros estilos que desees para la barra (bordes, etc.) */
-      }
-      
-      .barra-opciones ul {
-        list-style: none; /* Elimina los puntos de la lista */
-        padding: 0;
-        margin: 0;
-      }
-      
-      .barra-opciones li {
-        margin-bottom: 10px; /* Espacio entre los elementos del menú */
-      }
-      
-      .barra-opciones a {
-        text-decoration: none;
-        color: #333;
-        display: block; /* Hace que el enlace ocupe todo el ancho del li */
-        padding: 10px;
-        /* Otros estilos para los enlaces */
-      }
-      
-      .barra-opciones a:hover {
-        background-color: #ddd; /* Cambia el fondo al pasar el ratón */
-      }
-      
-      /* Estilos para la sección de servicios */
-      .servicios {
-        flex-grow: 1; /* Ocupa el espacio restante a la derecha de la barra */
-        padding: 20px;
-        box-sizing: border-box;
-        display: flex; /* Para alinear los servicios horizontalmente */
-        flex-wrap: wrap; /* Permite que los servicios pasen a la siguiente línea si no caben */
-        justify-content: space-around; /* Distribuye los servicios con espacio alrededor */
-      }
-      
-      .servicio {
-        width: calc(33% - 20px); /* Aproximadamente un tercio del ancho con margen */
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        text-align: center;
-      }
-      
-      .servicio img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-      }
-
+    .main-container{
+        display: block;
+        
+    }
+    .barra-opciones{
+        width: 100%;
+        padding: 5px;
+    }
+    .barra-opciones ul{
+        display: flex;
+        background-color: #2c314a;
+        position: fixed;
+    }
+    .servicios{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
