@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="img/img_logo_principal.jpg" alt="logo principal">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#nav_form">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <img id="inicio" src="img/img_banner.jpg" alt="banner principal"> 
+        <div class="hero-content">
+            <h1>FocusFlow</h1>
+            <p>La mejor aplicación productividad</p>
+            <div class="hero-buttons">
+                <button>Descargar App</button>
+                <button>Ver más</button>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id ="caracteristicas"class="seccion">
+            <h3>Características</h3>
+            <div class="grid-container">
+                <div class="item">
+                    <img src="img/1.png">
+                    <h3>Modelo 1</h3>
+                    <p class="descripcion">Compacto, urbano y eficiente.</p>
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg">
+                    <h3>Modelo 2</h3>
+                    <p class="descripcion">Sedan, familiar y comodo.</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.jpeg">
+                    <h3>Modelo 3</h3>
+                    <p class="descripcion">Economico, ligero y rapido.</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.jpeg">
+                    <h3>Modelo 3</h3>
+                    <p class="descripcion">Economico, ligero y rapido.</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.jpeg">
+                    <h3>Modelo 3</h3>
+                    <p class="descripcion">Economico, ligero y rapido.</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.jpeg">
+                    <h3>Modelo 3</h3>
+                    <p class="descripcion">Economico, ligero y rapido.</p>
+                </div>
+    
+            </div>
+        </section>
+        <section id ="precios"class="seccion">
+            <h3>Precios</h3>
+            <div class="grid-container">
+                <div class="item">
+                    <h3>Basic</h3>
+                    <p class="precio">23$/mes</p>
+                    <p class="descripcion">Compacto, urbano y eficiente.Compacto, urbano y eficiente.Compacto, urbano y eficiente.</p>
+                    <button>Comprar</button>
+                </div>
+                <div id="recomendado" class="item">
+                    <h3>Pro</h3>
+                    <p class="precio">40$/mes</p>
+                    <p class="descripcion">Compacto, urbano y eficiente.Compacto, urbano y eficiente.Compacto, urbano y eficiente.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="item">
+                    <h3>Elite</h3>
+                    <p class="precio">120$/mes</p>
+                    <p class="descripcion">Compacto, urbano y eficiente.Compacto, urbano y eficiente.Compacto, urbano y eficiente.</p>
+                    <button>Comprar</button>
+                </div>
+    
+            </div>
+        </section>
+
+        <nav id="nav_form">
+            <h3>Contactanos...</h3>
+        </nav>
+        <form action="/procesar-formulario" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+        
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+        
+            <div>
+                
+                <label for="terminos">Acepto los términos y condiciones<input type="checkbox" id="terminos" name="terminos" value="aceptado"></label>
+            </div>
+        
+            <button type="submit">Enviar</button>
+        </form>
+        <footer>
+            
+            <div id="pie" class="footer-container">
+                <div class="footer-left">
+                    <p>Todos los derechos de autor concedidos 2025.&copy;</p>
+                    <p>Calle Ciclista 34, Ciudad Cañamo</p>
+                    <p>+34 658 658 745</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://x.com/" target="_blank"><img src="img/img_logo_x.png" alt="X (Twitter)"></a>
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="img/img_logo_facebuke.png" alt="Facebook"></a>
+                    <a href="https://es.linkedin.com/" target="_blank"><img src="img/img_logo_linkedin.jpg" alt="LinkedIn"></a>
+                </div>
+              </div>
+        </footer>
+    </main>
+</body>
+</html>
