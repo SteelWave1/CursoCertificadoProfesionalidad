@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetMarket - Productos Destacados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .bg_mio{
+    background-color: #0f67bf !important;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid">
+    <div class="row bg-primary text-white text-center py-4">
+      <div class="col">
+        <h1>🐾 PetMarket</h1>
+      </div>
+    </div>
+
+    <!-- Productos Destacados -->
+    <div class="row text-center my-4">
+      <div class="col-md-4 p-3">
+        <img src="perros.jpg" class="img-fluid rounded shadow mb-2" alt="Comida para perros">
+        <h5>Comida Premium para Perros</h5>
+        <button class="btn btn-primary mt-2">Comprar</button>
+      </div>
+      <div class="col-md-4 p-3">
+        <img src="gatos.webp" class="img-fluid rounded shadow mb-2" alt="Juguete para gato">
+        <h5>Juguete Interactivo para Gatos</h5>
+        <button class="btn btn-success mt-2">Añadir al carrito</button>
+      </div>
+      <div class="col-md-4 p-3">
+        <img src="pecera.webp" class="img-fluid rounded shadow mb-2" alt="Accesorio para peces">
+        <h5>Decoración para Peceras</h5>
+        <button class="btn btn-warning mt-2">Ver más</button>
+      </div>
+    </div>
+
+    <!-- Tabla de Stock -->
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h3 class="text-center my-3">📋 Stock de Productos</h3>
+        <table class="table table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th class="bg_mio">Producto</th>
+              <th class="bg_mio">Categoría</th>
+              <th class="bg_mio">Unidades</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Comida Premium para Perros</td>
+              <td>Alimento</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>Juguete Interactivo para Gatos</td>
+              <td>Juguetes</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Decoración para Peceras</td>
+              <td>Accesorios</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row bg-dark text-white text-center py-3 mt-4">
+      <div class="col">
+        © 2025 PetMarket - Todos los derechos reservados
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
